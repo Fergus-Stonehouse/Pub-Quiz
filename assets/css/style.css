@@ -1,7 +1,7 @@
-h1 {
-    
-}
-
-p {
+/*  ------------------------------------------------  General Styling  -------------------------------------------------------------------*/
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: black;
+    color:azure;
     text-align: center;
 }
