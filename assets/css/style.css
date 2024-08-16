@@ -5,3 +5,33 @@ body {
     color:azure;
     text-align: center;
 }
+
+
+/*  -------------------------------------------------  Targetted Styling  ----------------------------------------------------------------*/
+header {
+    max-width: 90%;
+    height: 80px;
+}
+
+h1 {
+    padding: 20px, 40px;
+}
+
+.startgame {
+    max-width: 95vw;
+    margin-top:10px;
+    margin-bottom: 20px;
+    padding:10px;
+    justify-content: center;
+}
+
+.start {
+    max-width: 90%;
+    
+}
+
+#mind-blown {
+    max-width: 90%;
+    padding:10px;
+
+}
