@@ -9,9 +9,14 @@ function startgame(event) {
                         <div id="question-area">
                             <img src="assets/images/scroll.png" alt="A scroll">
                         </div>
-                                
+                        <div id="answer-options">
+                            <button id="AnswerA"><p>A</p></button>
+                            <button id="AnswerB"><p>B</p></button>
+                            <button id="AnswerC"><p>C</p></button>
+                        </div>
                         <div id="score-zone">
-                            <p id="score">Score</p>
+                            <h3>Score:</h3>
+                            <p>score boiler plate</p>
                         </div>
                         `;
     }
