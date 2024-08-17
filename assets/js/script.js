@@ -5,18 +5,21 @@ start.addEventListener('click', startgame)
 function startgame(event) {
     console.log('Hello, World');
     let gameZone = document.getElementById('game-zone');
-    gameZone.innerHTML= `
-                        <div id="question-area">
-                            <img src="assets/images/scroll.png" alt="A scroll">
-                        </div>
-                        <div id="answer-options">
-                            <button id="AnswerA"><p>A</p></button>
-                            <button id="AnswerB"><p>B</p></button>
-                            <button id="AnswerC"><p>C</p></button>
-                        </div>
-                        <div id="score-zone">
-                            <h3>Score:</h3>
-                            <p>score boiler plate</p>
-                        </div>
+    gameZone.innerHTML= `  
+                        <img src="assets/images/scroll.png" class="game-scroll" alt="A scroll">   
+                        <div id="play-area">    
+                            <div id="question-area">
+                                <p>Question</p>
+                            </div>
+                            <div id="answer-options">
+                                <button id="AnswerA" class="button"><p>A</p></button>
+                                <button id="AnswerB" class="button"><p>B</p></button>
+                                <button id="AnswerC" class="button"><p>C</p></button>
+                            </div>
+                            <div id="score-zone">
+                                <p>Score:</p>
+                                <p>score boiler plate</p>
+                            </div>
+                        </div>            
                         `;
     }

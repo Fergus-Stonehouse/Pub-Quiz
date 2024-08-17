@@ -6,6 +6,16 @@ body {
     text-align: center;
 }
 
+h1 {
+    padding: 20px, 40px;
+    text-align:center;
+}
+
+h5 {
+    font-family: "Chakra Petch", sans-serif;
+    padding: 20px, 40px;
+    text-align:center;
+}
 
 /*  -------------------------------------------------  Targetted Styling  ----------------------------------------------------------------*/
 /*  -------------------------------------------------  Headers  ----------------------------------------------------------------*/
@@ -14,38 +24,53 @@ header {
     height: 100px;
 }
 
-h1 {
-    padding: 20px, 40px;
-    text-align:center;
-}
-
-
 /*  -------------------------------------------------  Main  ----------------------------------------------------------------*/
 main {
-    display:flex;
-    margin-top: 10px;
-    flex-wrap:nowrap;
-    flex-direction: column;
+    display:flex;    
     align-items: center;
     justify-content: center;
+    width:95%;
 }
 
 .game-zone {
-    max-width: 95vw;
+    width: 350px;
+    max-height: 50%;
     margin-top:10px;
     margin-bottom: 20px;
     padding:10px;
-    justify-content: center;
+    align-items: center;
 }
 
 .start {
     max-width: 90%;
-    
 }
 
-/*#mind-blown {
-    margin: 1px;
-    width: 90vw;
-    padding:10px;
-    height:500px;
-}*/
+#mind-blown {
+    display:flex;
+    height: 500px;
+    width: 80%;
+}
+
+#game-scroll {
+    display:flex;
+    height: 500px;
+    width: 95%;
+    justify-content: center;
+}
+
+.question-area {
+    display:flex;
+    max-width: 85%;
+    max-height:250px;
+    padding:30px;
+    margin-top:5px;
+    margin-bottom:10px;
+    font-family: "Quicksand", sans-serif;
+    justify-content: center;
+}
+
+.answer-options {
+    justify-content: space-between;
+    padding:5px;
+    height: 100px;
+}
