@@ -30,7 +30,7 @@ main {
     justify-content: center;
 }
 
-.startgame {
+.game-zone {
     max-width: 95vw;
     margin-top:10px;
     margin-bottom: 20px;
