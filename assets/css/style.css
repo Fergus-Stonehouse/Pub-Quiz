@@ -8,13 +8,26 @@ body {
 
 
 /*  -------------------------------------------------  Targetted Styling  ----------------------------------------------------------------*/
+/*  -------------------------------------------------  Headers  ----------------------------------------------------------------*/
 header {
     max-width: 90%;
-    height: 80px;
+    height: 100px;
 }
 
 h1 {
     padding: 20px, 40px;
+    text-align:center;
+}
+
+
+/*  -------------------------------------------------  Main  ----------------------------------------------------------------*/
+main {
+    display:flex;
+    margin-top: 10px;
+    flex-wrap:nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .startgame {
@@ -31,7 +44,8 @@ h1 {
 }
 
 #mind-blown {
-    max-width: 90%;
+    margin: 1px;
+    width: 90vw;
     padding:10px;
-
+    height:500px;
 }
