@@ -1,17 +1,18 @@
 const start = document.getElementById('start');
-start.addEventListener('click', startgame, questNum, newQuestion);
-let questNum = document.getElementById('questNum').value;
-let score = document.getElementById('score').value;
-let question = document.getElementById('question').value;
+
+start.addEventListener('click', startgame);
+start.addEventListener('click', questNum);
+start.addEventListener('click', newQuestion);
 
 //---------------------   Set the Game Zone   ------------------------------------------------//
 function startgame(event) {
     console.log('Hello, World');
+    
     let gameZone = document.getElementById('game-zone');
     gameZone.innerHTML = `   
                         <section id="play-area">
                             <div id="quest-num">
-                                <p>Question Number: </p><p id="questNum">1</p>
+                                <p>Question Number: </p><p id="questNum">0</p>
                             </div>
 
                             <div id="question-area">
@@ -31,6 +32,7 @@ function startgame(event) {
                             </div>
                         </section>            
                         `;
+
     console.log(questNum).value;
     console.log(score).value;
 }
@@ -56,20 +58,20 @@ let questionSheet = [
     {
         question: "What is the first letter of the Alphabet?",
         answers: {
-            a: "A - ",
-            b: "B - ",
-            c: "C - "
+            a: "A - A",
+            b: "B - B",
+            c: "C - C"
         },
         correctAnswer: "a"
     },
     {
-        question: "What is the first letter of the Alphabet?",
+        question: "What is the first whole number?",
         answers: {
-            a: "A - ",
-            b: "B - ",
-            c: "C - "
+            a: "A - 0",
+            b: "B - 1",
+            c: "C - 2"
         },
-        correctAnswer: "a"
+        correctAnswer: "b"
     },
     {
         question: "What is the first letter of the Alphabet?",
