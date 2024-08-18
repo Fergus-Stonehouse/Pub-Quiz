@@ -26,6 +26,7 @@ header {
     max-height: 100px;
     padding:10px;
     justify-content: center;
+    margin-bottom:50px;
 }
 
 /*  -------------------------------------------------  Main  ----------------------------------------------------------------*/
@@ -56,18 +57,19 @@ main {
 /*<img src="assets/images/scroll.jpg" class="game-scroll" alt="A scroll">*/
 
 #play-area {
+    margin-top:50px;
     max-width:95%;
     max-height: 95%;
     align-items: center;
     justify-content: center;
     display:flex;
-    flex-wrap: wrap;
+    
 }
 
 .mind-blown {
     display:flex;
-    max-height: 500px;
-    max-width: 80%;
+    height: 600px;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
