@@ -10,18 +10,18 @@ function startgame(event) {
                             <div id="quest-num">
                                 <p>Question Number: </p id="questNum"><p>0</p>
                             </div>
-                            <br>
+                            
                             <div id="question-area">
                                 <p>Question:</p>
                                 <p>What is the first letter of the Alphabet?</p>
                             </div>
-                            <br>
+                            
                             <div id="answer-options">
-                                <button id="AnswerA" class="button"><p>A</p></button>
-                                <button id="AnswerB" class="button"><p>B</p></button>
-                                <button id="AnswerC" class="button"><p>C</p></button>
+                                <button id="answerA" class="button"><p>A</p></button>
+                                <button id="answerB" class="button"><p>B - What's it to you, you betentacled thing!</p></button>
+                                <button id="answerC" class="button"><p>C - It's never Lupus.</p></button>
                             </div>
-                            <br>
+                            
                             <div id="score-zone">
                                 <p>Score:</p>
                                 <p>score boiler plate</p>

@@ -19,6 +19,10 @@ h5 {
     text-align:center;
 }
 
+.button {
+    width: 100%;
+}
+
 /*  -------------------------------------------------  Targetted Styling  ----------------------------------------------------------------*/
 /*  -------------------------------------------------  Headers  ----------------------------------------------------------------*/
 header {
@@ -62,7 +66,7 @@ main {
     max-height: 95%;
     align-items: center;
     justify-content: center;
-    display:flex;
+    
     
 }
 
@@ -96,5 +100,9 @@ main {
     justify-content: space-between;
     padding:5px;
     height: 200px;
-    width:80px;
+    width:100%;
+    justify-content: center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
