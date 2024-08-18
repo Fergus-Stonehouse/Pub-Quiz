@@ -4,16 +4,18 @@ body {
     background-color: black;
     color:azure;
     text-align: center;
+    max-height:60%;
+    max-width: 95vw;
 }
 
 h1 {
-    padding: 20px, 40px;
+    padding: 2px, 4px;
     text-align:center;
 }
 
 h5 {
     font-family: "Chakra Petch", sans-serif;
-    padding: 20px, 40px;
+    padding: 10px, 20px;
     text-align:center;
 }
 
@@ -21,7 +23,9 @@ h5 {
 /*  -------------------------------------------------  Headers  ----------------------------------------------------------------*/
 header {
     max-width: 90%;
-    height: 100px;
+    max-height: 100px;
+    padding:10px;
+    justify-content: center;
 }
 
 /*  -------------------------------------------------  Main  ----------------------------------------------------------------*/
@@ -30,35 +34,52 @@ main {
     align-items: center;
     justify-content: center;
     width:95%;
+    max-height:600px;
+    flex-direction: column;
 }
 
-.game-zone {
-    width: 350px;
-    max-height: 50%;
-    margin-top:10px;
-    margin-bottom: 20px;
+#game-zone {
+    display:block;
+    max-width: 95%;
+    max-height: 65%;
+    margin-top:1px;
+    margin-bottom:1px;
     padding:10px;
     align-items: center;
-}
-
-.start {
-    max-width: 90%;
-}
-
-#mind-blown {
-    display:flex;
-    height: 500px;
-    width: 80%;
-}
-
-#game-scroll {
-    display:flex;
-    height: 500px;
-    width: 95%;
     justify-content: center;
 }
 
-.question-area {
+#start {
+    max-width: 90%;
+}
+
+/*<img src="assets/images/scroll.jpg" class="game-scroll" alt="A scroll">*/
+
+#play-area {
+    max-width:95%;
+    max-height: 95%;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.mind-blown {
+    display:flex;
+    max-height: 500px;
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-scroll {
+    display:flex;
+    max-height: 500px;
+    max-width: 80%;
+    justify-content: center;
+}
+
+#question-area {
     display:flex;
     max-width: 85%;
     max-height:250px;
@@ -69,8 +90,9 @@ main {
     justify-content: center;
 }
 
-.answer-options {
+#answer-options {
     justify-content: space-between;
     padding:5px;
-    height: 100px;
+    height: 200px;
+    width:80px;
 }
