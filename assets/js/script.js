@@ -8,7 +8,7 @@ function startgame(event) {
     gameZone.innerHTML= `   
                         <section id="play-area">
                             <div id="quest-num">
-                                <p>Question Number: $(questNum)</p>
+                                <p>Question Number: </p id="questNum"><p>0</p>
                             </div>
                             <br>
                             <div id="question-area">
@@ -32,5 +32,6 @@ function startgame(event) {
     }
 
 function questNum() {
-    let questNum = getElementById("questNum")
+    let questNum = parseInt(document.getElementById("questNum").innerText);
+    document.getElementById("questNum").innerText = ++questNum;
 }
