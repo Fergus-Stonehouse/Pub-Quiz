@@ -8,9 +8,9 @@ function startgame(event) {
     gameZone.innerHTML= `   
                         <section id="play-area">
                             <div id="quest-num">
-                                <p>Question Number: </p id="questNum"><p>0</p>
+                                <p>Question Number: </p id="questNum"><p>1</p>
                             </div>
-                            
+
                             <div id="question-area">
                                 <p>Question:</p>
                                 <p>What is the first letter of the Alphabet?</p>
@@ -24,11 +24,12 @@ function startgame(event) {
                             
                             <div id="score-zone">
                                 <p>Score:</p>
-                                <p>score boiler plate</p>
+                                <p id="score">0</p>
                             </div>
                         </section>            
                         `;
                         console.log(questNum);
+                        console.log(score);
     }
 
 function questNum() {
