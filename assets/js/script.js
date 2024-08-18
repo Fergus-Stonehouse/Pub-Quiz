@@ -1,5 +1,8 @@
 const start = document.getElementById('start');
-start.addEventListener('click', startgame)
+start.addEventListener('click', startgame, questNum, newQuestion);
+let questNum = document.getElementById('questNum').value;
+let score = document.getElementById('score').value;
+let question = document.getElementById('question').value;
 
 //---------------------   Set the Game Zone   ------------------------------------------------//
 function startgame(event) {
@@ -8,12 +11,12 @@ function startgame(event) {
     gameZone.innerHTML= `   
                         <section id="play-area">
                             <div id="quest-num">
-                                <p>Question Number: </p id="questNum"><p>1</p>
+                                <p>Question Number: </p><p id="questNum">1</p>
                             </div>
 
                             <div id="question-area">
                                 <p>Question:</p>
-                                <p>What is the first letter of the Alphabet?</p>
+                                <p id="question">What is the first letter of the Alphabet?</p>
                             </div>
                             
                             <div id="answer-options">
@@ -28,11 +31,18 @@ function startgame(event) {
                             </div>
                         </section>            
                         `;
-                        console.log(questNum);
-                        console.log(score);
+                        console.log(questNum).value;
+                        console.log(score).value;
     }
 
-function questNum() {
+function questNum(event) {
     let questNum = parseInt(document.getElementById("questNum").innerText);
     document.getElementById("questNum").innerText = ++questNum;
+}
+
+
+
+function increaseScore() {
+    let score = parseInt(document.getElementById("score").value);
+    document.getElementById("score").innerText = ++score;
 }
