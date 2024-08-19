@@ -2,8 +2,8 @@ const start = document.getElementById('start');
 
 start.addEventListener('click', startgame);
 start.addEventListener('click', questNum);
-start.addEventListener('click', newQuestion);
-
+start.addEventListener('click', shuffle);
+start.addEventListener('click', nextQuestion);
 
 //---------------------   Set the Game Zone   ------------------------------------------------//
 function startgame(event) {
@@ -33,33 +33,31 @@ function startgame(event) {
                             </div>
                         </section>            
                         `;
+                        console.log('game-zone built');
 }
 
+//---------------------------------------------------  Show Question Number  -------------------------------------------------------//
 function questNum(event) {
     let questNum = parseInt(document.getElementById("questNum").innerText);
-    document.getElementById("questNum").innerText = ++questNum;
+        document.getElementById("questNum").innerText = ++questNum;
+        console.log(questNum);
 }
 
-function newQuestion(event) {
-    //-------------------------------------------   randomly generate a new question   ---------------------------------------//
-    let questionSheet = []
-    for (let i = 0; i < 5; i++) {
-    let index = Math.floor(Math.random() * 10)
-        while (questionSheet.includes(index)){
-            index = Math.floor(Math.random() * 10)
-        }
-    questionSheet.push(i)
-}
-// and now to populate the list with actual questions
-
-for (let i = 0; i < questionSheet.length; i++) {
-    chosen_questions[i] = your_questions_list[chosen_questions[i]];
-}
-
-console.log(chosen_questions);
+//-------------------------------------------------  Generate Questions  --------------------------------------------------//
+//------------------------------------------  Use Fisher-Yates algorith to shuffle the questionSheet array  ------------------------------------//
+function shuffle(questionSheet) {
+    var j, x, i;
+    for (i = questionSheet.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = questionSheet[i];
+        questionSheet[i] = questionSheet[j];
+        questionSheet[j] = x;
+    }
+    return questionSheet;
 }
 
 
+//------------------------------------------------  Display The Question
 
 function checkAnswer(event) {
     document.getElementById("answer-options").addEventListener('click', function(e){
@@ -81,7 +79,9 @@ function checkAnswer(event) {
 function increaseScore() {
     let score = parseInt(document.getElementById("score").value);
     document.getElementById("score").innerText = ++score;
+    console.log(score);
 }
+console.log(score,'out of',questNum);
 
 //------------------------------------------------  Questions Array  ----------------------------------------------//
 let questionSheet = [
