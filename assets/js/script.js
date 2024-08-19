@@ -76,12 +76,11 @@ function checkAnswer(event) {
     }
 }
 
+//-----------------------------------------------  Increase Score on Correct Answer  -----------------------------------//
 function increaseScore() {
     let score = parseInt(document.getElementById("score").value);
     document.getElementById("score").innerText = ++score;
-    console.log(score);
 }
-console.log(score,'out of',questNum);
 
 //------------------------------------------------  Questions Array  ----------------------------------------------//
 let questionSheet = [
