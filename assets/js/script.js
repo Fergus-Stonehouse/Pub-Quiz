@@ -7,7 +7,7 @@ const start = document.getElementById('start');
 start.addEventListener('click', startgame);
 start.addEventListener('click', questNum);
 start.addEventListener('click', shuffle);
-start.addEventListener('click', nextQuestion);
+start.addEventListener('click', newQuestion);
 
 //---------------------   Set the Game Zone   ------------------------------------------------//
 function startgame(event) {
@@ -95,6 +95,11 @@ function checkAnswer(event) {
 function increaseScore() {
     let score = parseInt(document.getElementById("score").value);
     document.getElementById("score").innerText = ++score;
+}
+
+//------------------------------------------------ End the game and continue?  ----------------------------------------------//
+function endGame() {
+
 }
 
 //------------------------------------------------  Questions Array  ----------------------------------------------//
