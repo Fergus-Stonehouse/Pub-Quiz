@@ -1,3 +1,7 @@
+let questNum = "";
+let score = "";
+
+
 const start = document.getElementById('start');
 
 start.addEventListener('click', startgame);
@@ -36,12 +40,17 @@ function startgame(event) {
                         console.log('game-zone built');
 }
 
-//---------------------------------------------------  Show Question Number  -------------------------------------------------------//
+//-----------------------------  Show Question Number and after the 10th Question, end gamend game afgter 10 questions  ----------------------//
 function questNum(event) {
     let questNum = parseInt(document.getElementById("questNum").innerText);
-        document.getElementById("questNum").innerText = ++questNum;
-        console.log(questNum);
-}
+            if (questNum.innertext = '11')  {
+                endGame();
+        } else {
+            document.getElementById("questNum").innerText = ++questNum;
+            console.log(questNum);
+        }
+    }
+
 
 //-------------------------------------------------  Generate Questions  --------------------------------------------------//
 //------------------------------------------  Use Fisher-Yates algorith to shuffle the questionSheet array  ------------------------------------//
@@ -57,7 +66,13 @@ function shuffle(questionSheet) {
 }
 
 
-//------------------------------------------------  Display The Question
+//------------------------------------------------  Display the next question  -----------------------------------------//
+function newQuestion(questionSheet) {
+    let newQuestion = document.getElementById('newQuestion');
+    newQuestion.innerHTML = questionSheet[0].push;
+}
+
+
 
 function checkAnswer(event) {
     document.getElementById("answer-options").addEventListener('click', function(e){
