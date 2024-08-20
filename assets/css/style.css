@@ -90,6 +90,14 @@ main {
     justify-content: center;
 }
 
+#newQuestion {
+    height: 100px;
+    padding: 20px;
+    margin: 1px;
+    justify-content: center;
+    
+}
+
 #answer-options {
     justify-content: space-between;
     padding:5px;

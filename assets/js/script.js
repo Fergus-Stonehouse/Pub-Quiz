@@ -1,12 +1,8 @@
-let questNum = "";
-let score = "";
-
-
 const start = document.getElementById('start');
 
-start.addEventListener('click', startgame);
-start.addEventListener('click', questNum);
 start.addEventListener('click', shuffle);
+start.addEventListener('click', questNum);
+start.addEventListener('click', startgame);
 start.addEventListener('click', newQuestion);
 
 //---------------------   Set the Game Zone   ------------------------------------------------//
@@ -17,12 +13,12 @@ function startgame(event) {
     gameZone.innerHTML = `   
                         <section id="play-area">
                             <div id="quest-num">
-                                <p>Question Number: </p><p id="questNum">0</p>
+                                <p>Question Number: </p><p id="questNum">1</p>
                             </div>
 
                             <div id="question-area">
                                 <p>Question:</p>
-                                <p id="newQuestion"></p>
+                                <p id="newQuestion"></p>${newQuestion}
                             </div>
                             
                             <div id="answer-options">
@@ -43,7 +39,7 @@ function startgame(event) {
 //-----------------------------  Show Question Number and after the 10th Question, end gamend game afgter 10 questions  ----------------------//
 function questNum(event) {
     let questNum = parseInt(document.getElementById("questNum").innerText);
-            if (questNum.innertext = '11')  {
+            if (questNum === '11')  {
                 endGame();
         } else {
             document.getElementById("questNum").innerText = ++questNum;
@@ -65,29 +61,25 @@ function shuffle(questionSheet) {
     return questionSheet;
 }
 
-
 //------------------------------------------------  Display the next question  -----------------------------------------//
 function newQuestion(questionSheet) {
-    let newQuestion = document.getElementById('newQuestion');
-    newQuestion.innerHTML = questionSheet[0].push;
+    let newQuestion = questionSheet[0].question;
+    document.getElementById('newQuestion').innerHTML = newQuestion;
+    console.log(newQuestion);
 }
 
 
-
+//------------------------------------------------  Check answer and loop  --------------------------------------------//
 function checkAnswer(event) {
     document.getElementById("answer-options").addEventListener('click', function(e){
         let userAnswer = e.target.id;
-        console.log(userAnswer);
         return userAnswer;
       });
-    console.log(userAnswer); console.log(userAnswer).textContent;
     let correctAnswer = questionSheet[correctAnswer].textContent;
     if (userAnswer === correctAnswer) {
         increaseScore(); questNum(); newQuestion ();
-        console.log(correctAnswer);
     } else {
         questNum(); newQuestion ();
-        console.log('wrong', questionSheet[correctAnswer])
     }
 }
 
@@ -95,6 +87,7 @@ function checkAnswer(event) {
 function increaseScore() {
     let score = parseInt(document.getElementById("score").value);
     document.getElementById("score").innerText = ++score;
+    console.log("score");
 }
 
 //------------------------------------------------ End the game and continue?  ----------------------------------------------//
