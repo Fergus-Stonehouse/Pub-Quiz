@@ -1,7 +1,6 @@
 const start = document.getElementById('start');
 
 start.addEventListener('click', shuffle);
-start.addEventListener('click', questNum);
 start.addEventListener('click', startgame);
 start.addEventListener('click', newQuestion);
 
@@ -18,13 +17,13 @@ function startgame(event) {
 
                             <div id="question-area">
                                 <p>Question:</p>
-                                <p id="newQuestion"></p>${newQuestion}
+                                <p id="newQuestion"></p>
                             </div>
                             
                             <div id="answer-options">
-                                <button id="a" class="button"><p>A</p></button>
-                                <button id="b" class="button"><p>B - What's it to you, you betentacled thing!</p></button>
-                                <button id="c" class="button"><p>C - It's never Lupus.</p></button>
+                                <button id="a" class="button"><p>A - As in Aaaaaaaaaaaaaay!  THis is some additional boilerplate to test the heights</p></button>
+                                <button id="b" class="button"><p>B - What's it to you, you betentacled thing! THis is some additional boilerplate to test the heights </p></button>
+                                <button id="c" class="button"><p>C - It's never Lupus. THis is some additional boilerplate to test the heights</p></button>
                             </div>
                             
                             <div id="score-zone">
@@ -38,11 +37,11 @@ function startgame(event) {
 
 //-----------------------------  Show Question Number and after the 10th Question, end gamend game afgter 10 questions  ----------------------//
 function questNum(event) {
-    let questNum = parseInt(document.getElementById("questNum").innerText);
+    let questNum = parseInt(document.getElementById("questNum"));
             if (questNum === '11')  {
                 endGame();
         } else {
-            document.getElementById("questNum").innerText = ++questNum;
+            document.getElementById("questNum") = ++questNum;
             console.log(questNum);
         }
     }
@@ -63,11 +62,14 @@ function shuffle(questionSheet) {
 
 //------------------------------------------------  Display the next question  -----------------------------------------//
 function newQuestion(questionSheet) {
-    let newQuestion = questionSheet[0].question;
+    var newQuestion = [];
+    for(let i=0; i<questionSheet.length; i++) {
+        newQuestion.push();
+        console.log(newQuestion);
+    }
     document.getElementById('newQuestion').innerHTML = newQuestion;
-    console.log(newQuestion);
+    
 }
-
 
 //------------------------------------------------  Check answer and loop  --------------------------------------------//
 function checkAnswer(event) {

@@ -20,6 +20,7 @@ h5 {
 
 .button {
     width: 100%;
+    justify-content: center;
 }
 
 /*  -------------------------------------------------  Targetted Styling  ----------------------------------------------------------------*/
@@ -59,8 +60,10 @@ main {
 
 #play-area {
     background: url(../images/scroll.jpg) center/cover;
+    height:550px;
+    max-width: 500px;
     margin:1px;
-    padding:50px;
+    
     align-items: center;
     justify-content: center;
     color:black;
@@ -76,13 +79,13 @@ main {
 
 .game-scroll{
     justify-content: center;
-    align-items: center;
-    width:95vw;
+    
 }
 
 #question-area {
     display:flex;
     max-height:250px;
+    max-width: 300px;
     padding:30px;
     margin-top:5px;
     margin-bottom:10px;
@@ -99,12 +102,10 @@ main {
 }
 
 #answer-options {
-    justify-content: space-between;
-    padding:5px;
-    height: 200px;
-    width:100%;
+    height:fit-content;
+    padding-left:30px;
+    height: 20px;
+    width:80%;
     justify-content: center;
-    display:flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
