@@ -60,15 +60,14 @@ function shuffle(questionSheet) {
     return questionSheet;
 }
 
-//------------------------------------------------  Display the next question  -----------------------------------------//
+//---------------------------------  Display the next question one after the other from the new questionSheet array  ----------------------------//
 function newQuestion(questionSheet) {
-    var newQuestion = [];
-    for(let i=0; i<questionSheet.length; i++) {
-        newQuestion.push();
-        console.log(newQuestion);
+    newQuestion = document.getElementById('newQuestion').innerText;
+    for(let i=0; i<questionSheet.length; i++) { 
+        questionSheet[i].question = newQuestion; 
     }
-    document.getElementById('newQuestion').innerHTML = newQuestion;
-    
+    //let newQuestion = questionSheet[i].question;
+    console.log(newQuestion);
 }
 
 //------------------------------------------------  Check answer and loop  --------------------------------------------//
