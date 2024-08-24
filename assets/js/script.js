@@ -21,9 +21,9 @@ function startgame(event) {
                             </div>
                             
                             <div id="answer-options">
-                                <button id="a" class="button"><p>A - As in Aaaaaaaaaaaaaay!  THis is some additional boilerplate to test the heights</p></button>
-                                <button id="b" class="button"><p>B - What's it to you, you betentacled thing! THis is some additional boilerplate to test the heights </p></button>
-                                <button id="c" class="button"><p>C - It's never Lupus. THis is some additional boilerplate to test the heights</p></button>
+                                <button id="a" class="button"><p>A - </p></button>
+                                <button id="b" class="button"><p>B - </p></button>
+                                <button id="c" class="button"><p>C - </p></button>
                             </div>
                             
                             <div id="score-zone">
@@ -36,7 +36,7 @@ function startgame(event) {
 }
 
 //-----------------------------  Show Question Number and after the 10th Question, end gamend game afgter 10 questions  ----------------------//
-function questNum(event) {
+function questNum() {
     let questNum = parseInt(document.getElementById("questNum"));
             if (questNum === '11')  {
                 endGame();
@@ -61,27 +61,30 @@ function shuffle(questionSheet) {
 }
 
 //---------------------------------  Display the new question from the array entrythat corresponds to the question number  ----------------------------//
-function newQuestion(event, questionSheet) {
-    let newQuest = document.getElementById('questNum');  // Read the number of the question
-    let newQuestion = document.getElementById('newQuestion').innerText;
-        
-        newQuestion = questionSheet[i].question;
+function newQuestion() {
+    let questNum = document.getElementById('questNum').innerText;  // Read the number of the question
+    let newQuestion = questionSheet[questNum - 1];
+    document.getElementById('newQuestion').innerText = newQuestion.question;
+    document.getElementById('a').innerText = newQuestion.answers.a;
+    document.getElementById('b').innerText = newQuestion.answers.b;
+    document.getElementById('c').innerText = newQuestion.answers.c;
+    console.log(newQuestion);
     }
   
 
 //------------------------------------------------  Check answer and loop  --------------------------------------------//
-function checkAnswer(event) {
-    document.getElementById("answer-options").addEventListener('click', function(e){
-        let userAnswer = e.target.id;
-        return userAnswer;
-      });
-    let correctAnswer = questionSheet[correctAnswer].textContent;
-    if (userAnswer === correctAnswer) {
-        increaseScore(); questNum(); newQuestion ();
-    } else {
-        questNum(); newQuestion ();
-    }
-}
+//function checkAnswer(event) {
+//    document.getElementById("answer-options").addEventListener('click', function(e){
+//        let userAnswer = e.target.id;
+//        return userAnswer;
+//      });
+//    let correctAnswer = questionSheet[correctAnswer].textContent;
+//    if (userAnswer === correctAnswer) {
+//        increaseScore(); questNum(); newQuestion ();
+//    } else {
+//        questNum(); newQuestion ();
+//    }
+//}
 
 //-----------------------------------------------  Increase Score on Correct Answer  -----------------------------------//
 function increaseScore() {
