@@ -49,7 +49,7 @@ function questNum() {
 
 //-------------------------------------------------  Generate Questions  --------------------------------------------------//
 //------------------------------------------  Use Fisher-Yates algorith to shuffle the questionSheet array  ------------------------------------//
-function shuffle(questionSheet) {
+function shuffle() {
     var j, x, i;
     for (i = questionSheet.length - 1; i > 0; i--) {
         j = Math.floor(Math.random() * (i + 1));
@@ -57,6 +57,7 @@ function shuffle(questionSheet) {
         questionSheet[i] = questionSheet[j];
         questionSheet[j] = x;
     }
+    console.log(questionSheet[0]);
     return questionSheet;
 }
 
