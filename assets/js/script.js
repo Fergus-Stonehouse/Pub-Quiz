@@ -21,9 +21,10 @@ function startgame(event) {
                             </div>
                             
                             <div id="answer-options">
-                                <button id="a" class="button"><p>A - </p></button>
-                                <button id="b" class="button"><p>B - </p></button>
-                                <button id="c" class="button"><p>C - </p></button>
+                                <button id="a" class="button" onclick="checkAnswer(this.id)"><p>A - </p></button>
+                                <button id="b" class="button" onclick="checkAnswer(this.id)"><p>B - </p></button>
+                                <button id="c" class="button" onclick="checkAnswer(this.id)"><p>C - </p></button>
+                                <p> id="result"</p>
                             </div>
                             
                             <div id="score-zone">
@@ -64,9 +65,9 @@ function shuffle() {
 //---------------------------------  Display the new question from the array entrythat corresponds to the question number  ----------------------------//
 function newQuestion() {
     let questNum = document.getElementById('questNum').innerText;  // Read the number of the question
-    let newQuestion = questionSheet[questNum - 1];
-    document.getElementById('newQuestion').innerText = newQuestion.question;
-    document.getElementById('a').innerText = newQuestion.answers.a;
+    let newQuestion = questionSheet[questNum - 1];  // selet the question number that corresponds to the array
+    document.getElementById('newQuestion').innerText = newQuestion.question;  // display question
+    document.getElementById('a').innerText = newQuestion.answers.a;  // display corresponding answer to buttons
     document.getElementById('b').innerText = newQuestion.answers.b;
     document.getElementById('c').innerText = newQuestion.answers.c;
     console.log(newQuestion);
@@ -74,18 +75,22 @@ function newQuestion() {
   
 
 //------------------------------------------------  Check answer and loop  --------------------------------------------//
-//function checkAnswer(event) {
-//    document.getElementById("answer-options").addEventListener('click', function(e){
-//        let userAnswer = e.target.id;
-//        return userAnswer;
-//      });
-//    let correctAnswer = questionSheet[correctAnswer].textContent;
-//    if (userAnswer === correctAnswer) {
-//        increaseScore(); questNum(); newQuestion ();
-//    } else {
-//        questNum(); newQuestion ();
-//    }
-//}
+function checkAnswer(clicked) { 
+    let questNum = document.getElementById('questNum').innerText;  // Read the number of the question again
+    console.log(questNum);
+    let userAnswer = e => {   // Get ID of Clicked Element
+      }
+    console.log(userAnswer);
+    let correctAnswer = questionSheet[questNum - 1].correctAnswer; // select the question number that corresponds to the array and acquire the correct answer
+        if (userAnswer === correctAnswer) {
+            document.getElementById('result').innerText = "Yup!"
+            increaseScore(), questNum(), newQuestion()
+        } else {
+            document.getElementById('result').innerText = "Nope"
+            questNum(), newQuestion()
+        }
+    console.log(userAnswer); console.log(questNum); console.log(correctAnswer);
+}
 
 //-----------------------------------------------  Increase Score on Correct Answer  -----------------------------------//
 function increaseScore() {
