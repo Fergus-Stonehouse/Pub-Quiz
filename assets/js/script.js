@@ -60,15 +60,14 @@ function shuffle(questionSheet) {
     return questionSheet;
 }
 
-//---------------------------------  Display the next question one after the other from the new questionSheet array  ----------------------------//
-function newQuestion(questionSheet) {
-    newQuestion = document.getElementById('newQuestion').innerText;
-    for(let i=0; i<questionSheet.length; i++) { 
-        questionSheet[i].question = newQuestion; 
+//---------------------------------  Display the new question from the array entrythat corresponds to the question number  ----------------------------//
+function newQuestion(event, questionSheet) {
+    let newQuest = document.getElementById('questNum');  // Read the number of the question
+    let newQuestion = document.getElementById('newQuestion').innerText;
+        
+        newQuestion = questionSheet[i].question;
     }
-    //let newQuestion = questionSheet[i].question;
-    console.log(newQuestion);
-}
+  
 
 //------------------------------------------------  Check answer and loop  --------------------------------------------//
 function checkAnswer(event) {
