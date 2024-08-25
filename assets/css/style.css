@@ -87,7 +87,7 @@ main {
     max-height:250px;
     max-width: 300px;
     padding:30px;
-    margin-top:5px;
+    margin-top:80px;
     margin-bottom:10px;
     font-family: "Quicksand", sans-serif;
     justify-content: center;
@@ -104,8 +104,21 @@ main {
 #answer-options {
     height:fit-content;
     padding-left:30px;
+    padding-bottom:50px;
     height: 20px;
     width:80%;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+#result {
+justify-content: center;
+padding: 10px;
+margin:10px;
+}
+
+#score-zone {
+    margin: 10px;
+    padding: 10px;
+    width: 99%;
 }
