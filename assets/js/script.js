@@ -21,9 +21,9 @@ function startgame(event) {
                             </div>
                             
                             <div id="answer-options">
-                                <button id="a" class="button" onclick="checkAnswer(this.id)"><p>A - </p></button>
-                                <button id="b" class="button" onclick="checkAnswer(this.id)"><p>B - </p></button>
-                                <button id="c" class="button" onclick="checkAnswer(this.id)"><p>C - </p></button>
+                                <button id="a" class="button" onclick="checkAnswer()"><p>A - </p></button>
+                                <button id="b" class="button" onclick="checkAnswer()"><p>B - </p></button>
+                                <button id="c" class="button" onclick="checkAnswer()"><p>C - </p></button>
                                 <p> id="result"</p>
                             </div>
                             
@@ -75,21 +75,17 @@ function newQuestion() {
   
 
 //------------------------------------------------  Check answer and loop  --------------------------------------------//
-function checkAnswer(clicked) { 
-    let questNum = document.getElementById('questNum').innerText;  // Read the number of the question again
-    console.log(questNum);
-    let userAnswer = e => {   // Get ID of Clicked Element
-      }
-    console.log(userAnswer);
+function checkAnswer(e) { 
+    let questNum = document.getElementById('questNum').innerText;  // Read the number of the question again    
     let correctAnswer = questionSheet[questNum - 1].correctAnswer; // select the question number that corresponds to the array and acquire the correct answer
-        if (userAnswer === correctAnswer) {
-            document.getElementById('result').innerText = "Yup!"
-            increaseScore(), questNum(), newQuestion()
-        } else {
-            document.getElementById('result').innerText = "Nope"
-            questNum(), newQuestion()
-        }
-    console.log(userAnswer); console.log(questNum); console.log(correctAnswer);
+    let userAnswer = e.button.id;   //  Use the Id of the clicked button to determine the the userAnswer
+        if(userAnswer == correctAnswer) {   // determine if the user's answer is correct or not
+            increaseScore(); questNum(); newQuestion();  
+            console.log("Correct!");
+            } else {
+            questNum(); newQuestion();
+            console.log("Incorrect");
+            }
 }
 
 //-----------------------------------------------  Increase Score on Correct Answer  -----------------------------------//
