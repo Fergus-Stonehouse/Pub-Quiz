@@ -7,7 +7,7 @@ start.addEventListener('click', newQuestion);
 //---------------------   Set the Game Zone   ------------------------------------------------//
 function startgame(event) {
     console.log('Hello, World');
-    
+
     let gameZone = document.getElementById('game-zone');
     gameZone.innerHTML = `   
                         <section id="play-area">
@@ -21,9 +21,9 @@ function startgame(event) {
                             </div>
                             
                             <div id="answer-options">
-                                <button id="a" class="button" onclick="checkAnswer()"><p>A - </p></button>
-                                <button id="b" class="button" onclick="checkAnswer()"><p>B - </p></button>
-                                <button id="c" class="button" onclick="checkAnswer()"><p>C - </p></button>
+                                <button id="a" class="button" onClick="checkAnswer()"><p>A - </p></button>
+                                <button id="b" class="button" onClick="checkAnswer()"><p>B - </p></button>
+                                <button id="c" class="button" onClick="checkAnswer()"><p>C - </p></button>
                                 <p> id="result"</p>
                             </div>
                             
@@ -33,19 +33,19 @@ function startgame(event) {
                             </div>
                         </section>            
                         `;
-                        console.log('game-zone built');
+    console.log('game-zone built');
 }
 
 //-----------------------------  Show Question Number and after the 10th Question, end gamend game afgter 10 questions  ----------------------//
 function questNum() {
     let questNum = parseInt(document.getElementById("questNum"));
-            if (questNum === '11')  {
-                endGame();
-        } else {
-            document.getElementById("questNum") = ++questNum;
-            console.log(questNum);
-        }
+    if (questNum === '11') {
+        endGame();
+    } else {
+        document.getElementById("questNum") = ++questNum;
+        console.log(questNum);
     }
+}
 
 
 //-------------------------------------------------  Generate Questions  --------------------------------------------------//
@@ -58,41 +58,45 @@ function shuffle() {
         questionSheet[i] = questionSheet[j];
         questionSheet[j] = x;
     }
-    console.log(questionSheet[0]);
     return questionSheet;
 }
 
 //---------------------------------  Display the new question from the array entrythat corresponds to the question number  ----------------------------//
 function newQuestion() {
-    let questNum = document.getElementById('questNum').innerText;  // Read the number of the question
-    let newQuestion = questionSheet[questNum - 1];  // selet the question number that corresponds to the array
-    document.getElementById('newQuestion').innerText = newQuestion.question;  // display question
-    document.getElementById('a').innerText = newQuestion.answers.a;  // display corresponding answer to buttons
+    let questNum = document.getElementById('questNum').innerText; // Read the number of the question
+    let newQuestion = questionSheet[questNum - 1]; // selet the question number that corresponds to the array
+    document.getElementById('newQuestion').innerText = newQuestion.question; // display question
+    document.getElementById('a').innerText = newQuestion.answers.a; // display corresponding answer to buttons
     document.getElementById('b').innerText = newQuestion.answers.b;
     document.getElementById('c').innerText = newQuestion.answers.c;
     console.log(newQuestion);
-    }
-  
+}
+
 
 //------------------------------------------------  Check answer and loop  --------------------------------------------//
-function checkAnswer(e) { 
-    let questNum = document.getElementById('questNum').innerText;  // Read the number of the question again    
-    let correctAnswer = questionSheet[questNum - 1].correctAnswer; // select the question number that corresponds to the array and acquire the correct answer
-    let userAnswer = e.button.id;   //  Use the Id of the clicked button to determine the the userAnswer
-        if(userAnswer == correctAnswer) {   // determine if the user's answer is correct or not
-            increaseScore(); questNum(); newQuestion();  
-            console.log("Correct!");
-            } else {
-            questNum(); newQuestion();
-            console.log("Incorrect");
-            }
+function checkAnswer() {
+    let questNum = document.getElementById('questNum').innerText; // Get the number of the question again    
+    let answerOptions = questionSheet[questNum - 1]; // select the question number that corresponds to the array for answer
+    let correctAnswer = answerOptions.correctAnswer; // get the answer
+    console.log(answerOptions.correctAnswer);
+    let userAnswer = $('button').click(function () { //  Set the User's answer as the clicked button's Id
+        var id = $(this).attr('id');
+    });
+    console.log(userAnswer);
+
+    if (userAnswer === correctAnswer) {
+        increaseScore;
+        questNum;
+        newQuestion;
+    }
 }
+
 
 //-----------------------------------------------  Increase Score on Correct Answer  -----------------------------------//
 function increaseScore() {
     let score = parseInt(document.getElementById("score").value);
-    document.getElementById("score").innerText = ++score;
-    console.log("score");
+    document.getElementById("score") = ++score;
+    console.log(score);
 }
 
 //------------------------------------------------ End the game and continue?  ----------------------------------------------//
@@ -101,15 +105,14 @@ function endGame() {
 }
 
 //------------------------------------------------  Questions Array  ----------------------------------------------//
-let questionSheet = [
-    {
-        question: "What is the first letter of the Alphabet?",
+let questionSheet = [{
+        question: "How many MOONS are there in our Solar System?",
         answers: {
-            a: "A - A",
-            b: "B - B",
-            c: "C - C"
+            a: "A - 14",
+            b: "B - 167",
+            c: "C - 288"
         },
-        correctAnswer: "a"
+        correctAnswer: "c"
     },
     {
         question: "Who fired first?",
@@ -139,11 +142,11 @@ let questionSheet = [
         correctAnswer: "c"
     },
     {
-        question: "A man walks in to a bar...",
+        question: "Which was the Greek God of the Sun",
         answers: {
-            a: "A - Ouch!",
-            b: "B - ...and has a drink. The End.",
-            c: "C - This isn't the correct answer."
+            a: "A - Apollo",
+            b: "B - Helios",
+            c: "C - Jupiter"
         },
         correctAnswer: "b"
     },
@@ -154,7 +157,7 @@ let questionSheet = [
             b: "B - the study of microscopes.",
             c: "C - the study on funghi."
         },
-        correctAnswer: "a"
+        correctAnswer: "c"
     },
     {
         question: "What do you call a man with a car on his head?",
@@ -173,5 +176,77 @@ let questionSheet = [
             c: "C - Just... nope..."
         },
         correctAnswer: "b"
+    },
+    {
+        question: "What is the first letter of the Alphabet?",
+        answers: {
+            a: "A - A",
+            b: "B - B",
+            c: "C - C"
+        },
+        correctAnswer: "a"
+    },
+    {
+        question: "How many types (classes) of star are there in the Min Sequesce?",
+        answers: {
+            a: "A - 5",
+            b: "B - 7",
+            c: "C - 9"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "Who is considered to have been the creator of The Batman?",
+        answers: {
+            a: "A - Bill Cold",
+            b: "B - Bob Noble",
+            c: "C - Bob Kane"
+        },
+        correctAnswer: "c"
+    },
+    {
+        question: "IN what year was the Battle of Hastings?",
+        answers: {
+            a: "A - 1066",
+            b: "B - 1068",
+            c: "C - 1201"
+        },
+        correctAnswer: "a"
+    },
+    {
+        question: "What are the nme of the moons of Mars?",
+        answers: {
+            a: "A - Phobos & Phoebe",
+            b: "B - Dominus & Pheobe",
+            c: "C - Phobos & Deimos"
+        },
+        correctAnswer: "c"
+    },
+    {
+        question: "What is eisoptrophobia?",
+        answers: {
+            a: "A - the ferar of ice",
+            b: "B - the frar of mirrors",
+            c: "C - the fear of isolation"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "What do you call a man with a crane on his head?",
+        answers: {
+            a: "A - Dead",
+            b: "B - Very strong",
+            c: "C - Whatever he wants to be called."
+        },
+        correctAnswer: "a"
+    },
+    {
+        question: "Who invented Roleplaying Games?",
+        answers: {
+            a: "A - Gary Gygax",
+            b: "B - Dave Arneson",
+            c: "C - Gary & Dave"
+        },
+        correctAnswer: "c"
     },
 ];
