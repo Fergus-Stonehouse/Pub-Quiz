@@ -9,13 +9,13 @@ let questionSheet = [{
     correctAnswer: "C - 288"
 },
 {
-    question: "Who fired first?",
+    question: "Who killed Superman?",
     answers: {
-        a: "A - Han Solo",
-        b: "B - The Lone Gunman",
-        c: "C - There was a gunshot?"
+        a: "A - Doomsday",
+        b: "B - DarkSeid",
+        c: "C - Batman"
     },
-    correctAnswer: "A - Han Solo"
+    correctAnswer: "A - Doomsday"
 },
 {
     question: "How many primary attributes are there in Dungeons and Drangons?",
@@ -33,7 +33,7 @@ let questionSheet = [{
         b: "B - 10",
         c: "C - 12"
     },
-    correctAnswer: "c"
+    correctAnswer: "C - 12"
 },
 {
     question: "Which was the Greek God of the Sun",
@@ -42,7 +42,7 @@ let questionSheet = [{
         b: "B - Helios",
         c: "C - Jupiter"
     },
-    correctAnswer: "b"
+    correctAnswer: "B - Helios"
 },
 {
     question: "What is mycology?",
@@ -51,43 +51,43 @@ let questionSheet = [{
         b: "B - the study of microscopes.",
         c: "C - the study on funghi."
     },
-    correctAnswer: "c"
+    correctAnswer: "C - the study on funghi."
 },
 {
-    question: "What do you call a man with a car on his head?",
+    question: "Which Bay Luhrman film stars Nicole Kidman and Ewan McGregor?",
     answers: {
-        a: "A - Jack",
-        b: "B - not going anywhere.",
-        c: "C - awaiting serious medical attention."
+        a: "A - Moulin Rouge",
+        b: "B - Romeo + Juliet",
+        c: "C - Australia"
     },
-    correctAnswer: "a"
+    correctAnswer: "A - Moulin Rouge"
 },
 {
     question: "Why do I wait for my dad jokes to fully mature?",
     answers: {
-        a: "A - The smell... dear Stars, it's for the smell!!!",
+        a: "A - The smell.",
         b: "B - Because then they're fully GROAN...",
-        c: "C - Just... nope..."
+        c: "C - Because Family is overrated."
     },
-    correctAnswer: "b"
+    correctAnswer: "B - Because then they're fully GROAN...b"
 },
 {
-    question: "What is the first letter of the Alphabet?",
+    question: "What is the capital of Chuile?",
     answers: {
-        a: "A - A",
-        b: "B - B",
-        c: "C - C"
+        a: "A - Santiago",
+        b: "B - Bogota",
+        c: "C - San Jose"
     },
     correctAnswer: "a"
 },
 {
-    question: "How many types (classes) of star are there in the Min Sequesce?",
+    question: "How many types (classes) of star are there in the Main Sequence?",
     answers: {
         a: "A - 5",
         b: "B - 7",
         c: "C - 9"
     },
-    correctAnswer: "b"
+    correctAnswer: "B - 7"
 },
 {
     question: "Who is considered to have been the creator of The Batman?",
@@ -96,7 +96,7 @@ let questionSheet = [{
         b: "B - Bob Noble",
         c: "C - Bob Kane"
     },
-    correctAnswer: "c"
+    correctAnswer: "C - Bob Kane"
 },
 {
     question: "IN what year was the Battle of Hastings?",
@@ -105,34 +105,34 @@ let questionSheet = [{
         b: "B - 1068",
         c: "C - 1201"
     },
-    correctAnswer: "a"
+    correctAnswer: "A - 1066"
 },
 {
-    question: "What are the nme of the moons of Mars?",
+    question: "What are the names of the moons of Mars?",
     answers: {
         a: "A - Phobos & Phoebe",
         b: "B - Dominus & Pheobe",
         c: "C - Phobos & Deimos"
     },
-    correctAnswer: "c"
+    correctAnswer: "C - Phobos & Deimos"
 },
 {
     question: "What is eisoptrophobia?",
     answers: {
-        a: "A - the ferar of ice",
-        b: "B - the frar of mirrors",
+        a: "A - the fear of ice",
+        b: "B - the fear of mirrors",
         c: "C - the fear of isolation"
     },
-    correctAnswer: "b"
+    correctAnswer: "B - the fear of mirrors"
 },
 {
-    question: "What do you call a man with a crane on his head?",
+    question: "How fast is the Speed of Ligght?",
     answers: {
-        a: "A - Dead",
-        b: "B - Very strong",
-        c: "C - Whatever he wants to be called."
+        a: "A - 262 998 596 m / s",
+        b: "B - 289 664 478 m / s",
+        c: "C - 299 792 458 m / s"
     },
-    correctAnswer: "a"
+    correctAnswer: "C - 299 792 458 m / s"
 },
 {
     question: "Who invented Roleplaying Games?",
@@ -141,6 +141,6 @@ let questionSheet = [{
         b: "B - Dave Arneson",
         c: "C - Gary & Dave"
     },
-    correctAnswer: "c"
+    correctAnswer: "C - Gary & Dave"
 },
 ];

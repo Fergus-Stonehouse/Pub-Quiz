@@ -57,18 +57,15 @@ function newQuestion() {
     document.getElementById('c').innerText = questionSheet[currentQuestion].answers.c;
 }
 
-
 //------------------------------------------------  Check answer and loop  --------------------------------------------//
 function checkAnswer(event) {
     let answerOptions = questionSheet[currentQuestion]; // select the question number that corresponds to the array for answer
     let correctAnswer = answerOptions.correctAnswer; // get the answer
     console.log(answerOptions.correctAnswer);
     buttonText = event.target.innerHTML;
-    console.log('The Button clicked was: ' + buttonText);
     
     if (buttonText == correctAnswer) {
-        increaseScore();
-        
+        increaseScore();   
     }
     currentQuestion++;
     questNumber();
