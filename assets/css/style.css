@@ -42,14 +42,17 @@ main {
     flex-direction: column;
 }
 
-#game-zone {
-    display:block;
+#game-zone, #landing-zone {
     max-height: 65%;
     margin-top:1px;
     margin-bottom:1px;
     padding:10px;
     align-items: center;
     justify-content: center;
+}
+
+.hidden {
+    display:none;
 }
 
 #start {
