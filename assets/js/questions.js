@@ -69,7 +69,7 @@ let questionSheet = [{
         b: "B - Because then they're fully GROAN...",
         c: "C - Because Family is overrated."
     },
-    correctAnswer: "B - Because then they're fully GROAN...b"
+    correctAnswer: "B - Because then they're fully GROAN..."
 },
 {
     question: "What is the capital of Chuile?",
@@ -78,7 +78,7 @@ let questionSheet = [{
         b: "B - Bogota",
         c: "C - San Jose"
     },
-    correctAnswer: "a"
+    correctAnswer: "A - Santiago"
 },
 {
     question: "How many types (classes) of star are there in the Main Sequence?",
@@ -126,7 +126,7 @@ let questionSheet = [{
     correctAnswer: "B - the fear of mirrors"
 },
 {
-    question: "How fast is the Speed of Ligght?",
+    question: "How fast is the Speed of Light?",
     answers: {
         a: "A - 262 998 596 m / s",
         b: "B - 289 664 478 m / s",

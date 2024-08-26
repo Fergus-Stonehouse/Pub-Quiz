@@ -26,13 +26,12 @@ function startgame() {
     console.log('game-zone built');
 }
 
-//-----------------------------  Show Question Number and after the 10th Question, end gamend game afgter 10 questions  ----------------------//
+//-----------------------------  Show Question Number and after the 10th Question, end game after 10 questions  ----------------------//
 function questNumber() {
     if (currentQuestion +1 == 11) {
         endGame();
     } else {
         questNumText.innerHTML = currentQuestion+1;
-        console.log(questNum);
     }
 }
 

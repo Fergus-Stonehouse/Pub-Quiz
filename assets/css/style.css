@@ -43,7 +43,7 @@ main {
 }
 
 #game-zone, #landing-zone {
-    max-height: 65%;
+    max-height: 80%;
     margin-top:1px;
     margin-bottom:1px;
     padding:10px;
@@ -63,13 +63,11 @@ main {
 
 #play-area {
     background: url(../images/scroll.jpg) center/cover;
-    height:550px;
-    max-width: 500px;
-    margin:1px;
-    
+    max-height:750px;
+    max-width:750px;
     align-items: center;
     justify-content: center;
-    color:black;
+    color: black;
 }
 
 .mind-blown {
