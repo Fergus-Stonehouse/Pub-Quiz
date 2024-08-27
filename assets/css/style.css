@@ -46,7 +46,7 @@ main {
     max-height: 80%;
     margin-top:1px;
     margin-bottom:1px;
-    padding:10px;
+    max-width:800px;
     align-items: center;
     justify-content: center;
 }
@@ -59,12 +59,12 @@ main {
     max-width: 90%;
 }
 
-/**/
+/*  ------------------------------------------  The Game Area  ------------------------------------------------------------  */
 
 #play-area {
-    background: url(../images/scroll.jpg) center/cover;
-    max-height:750px;
-    max-width:750px;
+    background: url(../images/scroll.jpg) no-repeat center/cover;
+    height:650px;
+    max-width:99%;
     align-items: center;
     justify-content: center;
     color: black;
@@ -79,7 +79,11 @@ main {
 }
 
 .game-scroll{
+    display:flex;
+    height: 600px;
     justify-content: center;
+    align-items: center;
+    max-width: 100%;
     
 }
 
@@ -94,6 +98,12 @@ main {
     justify-content: center;
 }
 
+.quest-num {
+    padding:20px;
+    margin-top:50px;
+    font-family: "Chakra Petch", sans-serif;
+}
+s
 #newQuestion {
     height: 100px;
     padding: 20px;
@@ -119,8 +129,13 @@ margin:10px;
 }
 
 #score-zone {
+    font-family: "Chakra Petch", sans-serif;
     margin: 10px;
     padding: 10px;
     width: 99%;
     justify-content: center;
+}
+
+#endGame {
+
 }

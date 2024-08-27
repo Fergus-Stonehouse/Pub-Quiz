@@ -13,7 +13,6 @@ start.addEventListener('click', startgame);
 
 //---------------------   Set the Game Zone   ------------------------------------------------//
 function startgame() {
-    console.log('Hello, World');
     landingZone.classList.add('hidden');
     gameZone.classList.remove('hidden');
     currentQuestion = 0;
@@ -81,5 +80,8 @@ function increaseScore() {
 
 //------------------------------------------------ End the game and continue?  ----------------------------------------------//
 function endGame() {
+    gameZone.classList.add(hidden);
+    endGame.classList.remove(hidden);
+    
     console.log('end game was called');
 }
