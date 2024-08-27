@@ -82,6 +82,6 @@ function increaseScore() {
 function endGame() {
     gameZone.classList.add(hidden);
     endGame.classList.remove(hidden);
-    
+    finalScore.innerHTML = score;
     console.log('end game was called');
 }

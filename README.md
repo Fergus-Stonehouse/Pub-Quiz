@@ -76,7 +76,7 @@
 - The chosen colour scheme for Your Weather is designed to be inviting and have a neutral aesthetic while giving a nice splash of colour.
 - The colours used are as follows:-
 
-- `#white` used for the primary logo and bordering for objects.
+- `#azure` used for the primary logo and bordering for objects.
 - `#black` used for primary text and for the general background.
 
 <details>
