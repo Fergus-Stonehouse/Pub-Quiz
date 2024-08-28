@@ -60,10 +60,9 @@
 
  Using the "Am I Responsive" website, here are three examples of the site showig responsivity.
 
-| Index / Main | Join Us | The Games |
-| :---: | :---: | :---: |
-| ![screenshot](assets/documentation/mockups/mockup-index.jpg) | ![screenshot](assets/documentation/mockups/mockup-join-us.jpg) | ![screenshot](assets/documentation/mockups/mockup-the-games.jpg) |
-
+| Index / Main |
+| :---: |
+| ![screenshot](assets/documentation/mockups/responsive-index.jpg) |
 ## UX
 
 - The design for Cpt Ferg's Pub Quiz was created as a series of wireframes sketches covering mobile, tablet and desktop to determine the initial design and layout of the site.
@@ -104,7 +103,7 @@ The original plan and the sketches of each of the html pages were drawn roughtly
 | :---: | :---: |
 | Original Plan | ![screenshot](assets/documentation/wireframes/cfpq-progression.jpg) |
 | Index | ![screenshot](assets/documentation/wireframes/landing-screen.jpg) |
-| Quiz Area | ![screenshot](assets/documentation/wireframes/quiz.area.jpg) |
+| Quiz Area | ![screenshot](assets/documentation/wireframes/quiz-area.jpg) |
 | End Game | ![screenshot](assets/documentation/wireframes/end-game.jpg) |
 
 ## Features

@@ -39,7 +39,6 @@ header {
 main {
     align-items: center;
     justify-content: center;
-    height: 99%;
     flex-direction: column;
 }
 
@@ -52,12 +51,12 @@ main {
 }
 
 #game-zone {
-    height:500px;
+    max-height:600px;
     margin-top: 1px;
     margin-bottom: 1px;
-    max-width: 100%;
+    max-width: 99%;
     justify-content: center;
-    background: url(../images/scroll.jpg) no-repeat center center/cover;
+    /*background: url(../images/scroll.jpg) no-repeat center/cover;*/
 }
 
 .hidden {
@@ -73,7 +72,8 @@ main {
 
 #play-area {
     max-width: 99%;
-    /*background: url(../images/scroll.jpg) no-repeat center center/cover;*/
+    max-height:99%;
+    background: url(../images/scroll.jpg) no-repeat center/cover;
     justify-content: center;
     color: black;
 }
@@ -87,10 +87,8 @@ main {
 }
 
 .game-scroll {
-    display: flex;
     max-height: 500px;
     justify-content: center;
-    align-items: center;
     max-width: 75%;
 }
 
@@ -151,3 +149,4 @@ main {
     max-width: 700px;
     justify-content: center;
 }
+
