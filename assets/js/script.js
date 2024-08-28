@@ -92,5 +92,6 @@ function endGame() {
 
 function startAgain() {
     gameEnd.classList.add('hidden');
+    scoreText.innerHTML = "0";
     startGame();
 }
