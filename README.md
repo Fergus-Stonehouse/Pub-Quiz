@@ -102,12 +102,10 @@ The original plan and the sketches of each of the html pages were drawn roughtly
 
 | Page | Screenshot |
 | :---: | :---: |
-| Original Plan | ![screenshot](assets/documentation/wireframes/wireframe-original-plan.jpg) |
-| Index | ![screenshot](assets/documentation/wireframes/wireframe-index.jpg) |
-| Game On! | ![screenshot](assets/documentation/wireframes/wireframe-game-on.jpg) |
-| The Games | ![screenshot](assets/documentation/wireframes/wireframe-the-games.jpg) |
-| Join Us | ![screenshot](assets/documentation/wireframes/wireframe-join-us.jpg) |
-| Thanks | ![screenshot](assets/documentation/wireframes/wireframe-thanks.jpg) |
+| Original Plan | ![screenshot](assets/documentation/wireframes/cfpq-progression.jpg) |
+| Index | ![screenshot](assets/documentation/wireframes/landing-screen.jpg) |
+| Quiz Area | ![screenshot](assets/documentation/wireframes/quiz.area.jpg) |
+| End Game | ![screenshot](assets/documentation/wireframes/end-game.jpg) |
 
 ## Features
 
