@@ -6,7 +6,9 @@ const buttonB = document.getElementById('b');
 const buttonC = document.getElementById('c');
 const scoreText = document.getElementById("score");
 const questNumText = document.getElementById("questNum");
+const gameEnd = document.getElementById('endGame');
 const startAgainButton = document.getElementById('startAgain');
+//const gameEnd = document.getElementById('endGame');
 let score;
 let currentQuestion;
 
@@ -82,13 +84,13 @@ function increaseScore() {
 //------------------------------------------------ End the game and continue?  ----------------------------------------------//
 function endGame() {
     gameZone.classList.add('hidden');
-    endGame.classList.remove('hidden');
+    gameEnd.classList.remove('hidden');
     finalScore.innerHTML = score;
     startAgainButton.addEventListener('click', startAgain)
     console.log('end game was called');
 }
 
 function startAgain() {
-    endGame.classList.add('hidden');
+    gameEnd.classList.add('hidden');
     startGame();
 }

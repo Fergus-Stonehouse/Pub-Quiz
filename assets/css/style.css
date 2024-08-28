@@ -37,20 +37,27 @@ header {
 
 /*  -------------------------------------------------  Main  ----------------------------------------------------------------*/
 main {
-    display: flex;
     align-items: center;
     justify-content: center;
     height: 99%;
     flex-direction: column;
 }
 
-#game-zone,
 #landing-zone {
-    max-height: 800px;
+    max-height: 95%;
     margin-top: 1px;
     margin-bottom: 1px;
-    max-width: 700px;
+    max-width: 100%;
     justify-content: center;
+}
+
+#game-zone {
+    height:500px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    max-width: 100%;
+    justify-content: center;
+    background: url(../images/scroll.jpg) no-repeat center center/cover;
 }
 
 .hidden {
@@ -59,14 +66,14 @@ main {
 
 #start {
     max-width: 90%;
+    max-height: 90%;
 }
 
 /*  ------------------------------------------  The Game Area  ------------------------------------------------------------  */
 
 #play-area {
-    max-height:850px;
     max-width: 99%;
-    background: url(../images/scroll.jpg) no-repeat center/cover;
+    /*background: url(../images/scroll.jpg) no-repeat center center/cover;*/
     justify-content: center;
     color: black;
 }
@@ -76,16 +83,15 @@ main {
     max-height: 600px;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    width: 100%;
 }
 
 .game-scroll {
     display: flex;
-    max-height: 600px;
+    max-height: 500px;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
-
+    max-width: 75%;
 }
 
 #question-area {
@@ -138,8 +144,10 @@ main {
 }
 
 #endGame {
-    max-height: 90%;
-    max-width: 800px;
-    align-items: center;
+    color: azure;
+    max-height: 800px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    max-width: 700px;
     justify-content: center;
 }

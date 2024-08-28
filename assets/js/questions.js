@@ -110,11 +110,11 @@ let questionSheet = [{
 {
     question: "What are the names of the moons of Mars?",
     answers: {
-        a: "A - Phobos & Phoebe",
-        b: "B - Dominus & Pheobe",
-        c: "C - Phobos & Deimos"
+        a: "A - Phobos and Phoebe",
+        b: "B - Dominus and Pheobe",
+        c: "C - Phobos and Deimos"
     },
-    correctAnswer: "C - Phobos & Deimos"
+    correctAnswer: "C - Phobos and Deimos"
 },
 {
     question: "What is eisoptrophobia?",
@@ -139,8 +139,8 @@ let questionSheet = [{
     answers: {
         a: "A - Gary Gygax",
         b: "B - Dave Arneson",
-        c: "C - Gary & Dave"
+        c: "C - Gary and Dave"
     },
-    correctAnswer: "C - Gary & Dave"
+    correctAnswer: "C - Gary and Dave"
 },
 ];
