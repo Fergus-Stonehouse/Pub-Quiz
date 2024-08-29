@@ -8,13 +8,13 @@ body {
 }
 
 h1 {
-    padding: 2px, 4px;
+    padding: 2px 4px;
     text-align: center;
 }
 
 h5 {
     font-family: "Chakra Petch", sans-serif;
-    padding: 10px, 20px;
+    padding: 10px 20px;
     text-align: center;
 }
 
@@ -85,5 +85,14 @@ main {
     justify-content: center;
     width: 100%;
     padding:5px;
+}
+
+#endGame {
+    color: azure;
+    max-height: 800px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    max-width: 99%;
+    justify-content: center;
 }
 

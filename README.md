@@ -62,7 +62,7 @@
 
 | Index / Main |
 | :---: |
-| ![screenshot](assets/documentation/mockups/responsive-index.jpg) |
+| ![screenshot](assets/documentation/mockups/responsive.jpg) |
 ## UX
 
 - The design for Cpt Ferg's Pub Quiz was created as a series of wireframes sketches covering mobile, tablet and desktop to determine the initial design and layout of the site.
@@ -90,10 +90,8 @@
 - I used the Google Fonts called 'Quicksand' and 'Chakra Petch' for The Pub Quiz site.
 - I felt that 'Quicksand' was easy-on-the-eyes while not seeming too formal for the primary elements of the quiz.
 - 'Chakra Petch' was picked because it provided an aesthetic contrast to 'Quicksand' so that the score and question number stand out amongst other text.   
-
-- [Chakra Petch](https://fonts.google.com/specimen/Chakra+Petch) was used for all text within the site.
-- [Quicksand](https://font.google.com/specimen/Quicksand)
-- [Font Awesome](https://fontawesome.com) icons were used in The Cellaar site, for GitHub links in the footer and the Game On page.
+- [Quicksand](https://font.google.com/specimen/Quicksand) was used for the major text within the site.
+- [Chakra Petch](https://fonts.google.com/specimen/Chakra+Petch) was used for minor text within the site.
 
 ## Wireframes
 
@@ -112,10 +110,12 @@ The original plan and the sketches of each of the html pages were drawn roughtly
 
 | Feature | Description | Screenshot |
 | :---: | :---: | :---: |
-| **Index** | The Main page provides a launchpad for the user upon arriving at the site. | ![screenshot](assets/documentation/features/link-to-game-on.jpg) |
-| **Randomised Questions** | The Quiz, upon beig started, takes all the available questions and shuffles them using a Fisher-Yates algorith. | ![screenshot](assets/documentation/features/discord-button.jpg) |
-| **Buttons** | The Answer Buttons have been sized in order to make the questions legible and easy to use without accidentally tapping another. | ![screenshot](assets/documention/features/game-links.jpg) |
-| **End Game** | After the game ends, the score is presented and the user may try again. | ![screenshot](assets/documentation/features/join-form.jpg) |
+| **Index** | The Main page provides a launchpad for the user upon arriving at the site. | ![screenshot](assets/documentation/features/launch.jpg) |
+| **Randomised Questions** | The Quiz, upon being started, takes all the available questions and shuffles them using a Fisher-Yates algorith. | ![screenshot](assets/documentation/features/random.jpg) |
+| **Buttons** | The Answer Buttons have been sized in order to make the questions legible and easy to use without accidentally tapping another. | ![screenshot](assets/documentation/features/buttons.jpg) |
+| **End Game** | After the game ends, the score is presented and the user may try again. | ![screenshot](assets/documentation/features/endgame.jpg) |
+
+
 
 ### Future Features
 
@@ -143,6 +143,9 @@ The original plan and the sketches of each of the html pages were drawn roughtly
 
 ## Testing
 
+The biggest problems that I faced, regarding JavaScript, was with displaying the question and checking the answer - adding global variables was the solution.
+Aside from that, the CSS was problematic but only because I had over-complicated it - removing several parts not only allowed the scroll to appear on the Launch behind the mind blown picture, but also made it easy to resize without the need for media queries while also containing the features within.
+
 ## Code Validation
 
 ### HTML
@@ -155,15 +158,15 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 ### CSS
 
-I have used the recommended [CSS Jigsaw Validator](assets/documentation/images/w3-org-validation-css.jpg) to validate all of my CSS files.
+I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator) to validate all of my CSS files.
 
 | Report | Screenshot |
 | :---: | :---: |
-| style.css | ![screenshot](assets/documentation/images/w3-org-validation-css.jpg) |
+| style.css | ![screenshot](assets/documentation/validation/css-validation.jpg) |
 
 ### JavaScript
 
-Below is the recommended [JSHint]() Results.
+Below is the recommended [JSHint](https://jshint.com/) Results.
 
 | Report | Screenshot |
 | :---: | :---: |
@@ -179,19 +182,18 @@ Below is the Lighthouse results.
 
 ## User Stories
 
-I recruited a variety of people to assist in testing the website, family and friends, and asked some users who would likely use the site again (namely, current members of the actual Cellar Discord channel), to provide feedback. This proved useful as certain images proved making reading the text difficult on the "game-on" page.
+I asked family and friends if they would try using the quiz and provide a little feedback.
 
 ### New Site Users
 
-- As a new site user, I would like to know what the site is about, so that I understand what the site does.
-- As a new site user, I would like to learn more about what Roleplaying is.
-- As a new site user, I would like to learn what games are usully being played on the Channel.
-- As a new site user, I would like to discover more about The Cellar Gaming Community.
+- As a new site user, I would like the buttons to be large and clear.
+- As a new site user, I would like questions to be large and clear.
+- As a new site user, I would like to know my total score at the end of the quiz.
 
 ### Returning Site Users
 
-- As a returning site user, I would like to be able to access the Discord Channel quickly.
-- As a returning site user, I would like to be able to visit the official game websites for additional gaming resources.
+- As a returning site user, I would like even more questions.
+- As a returning site user, I would like to have a quiz on a specialist subject, eg.: sports, history, etc.
 
 ## Deployment
 
@@ -209,7 +211,7 @@ This project can be cloned or forked in order to make a local copy on your own s
 
 ### Local vs Deployment
 
-There are no notable differences between my local developed site and the GitHub pages deployed site.
+There are no notable differences between my local developed site and the GitHub pages deployed site.  It was also viewed repeatedly on a mobile phone to see any differences.
 
 ## Credits
 
@@ -219,18 +221,19 @@ The following are credits to various people and technologies that have directly 
 
 | Source | Location | Notes |
 | --- | --- | --- |
-| [W3C](https://validator.w3.org/) | All pages | Validation |
-| [W3 Jigsaw](https://jigsaw.w3.org/css-validator/) | All pages | Validation |
-| [YouTube](https://www.youtube.com/watch?v=WZNG8UomjSI&t=1783s) | Main page | a source to get an idea of how to lay out the page |
+| [W3C](https://validator.w3.org/) | All | Validation |
+| [W3 Jigsaw](https://jigsaw.w3.org/css-validator/) | All | Validation |
+| [JSHint](https://jshint.com/) | All | Validation |
 | [Stack Overflow](https://stackoverflow.com/) | Research | additional javascript research |
-
+| [Medium](https://medium.com/) | Research | additional javascript research |
+| [She Codes](https://shecodes.io/) | Research | additional javascript research |
+| [Geeks for Geeks](https://geeksforgeeks.org/) | Research | additional javascript research |
 
 ### Acknowledgements
 
 - I would like to thank my Code Institute mentor, [Chris Quinn](https://github.com/10xOXR) for their patience, knowledge and encouragement.
-- I would like to thank  [Simon Boylan](https://github.com/boderg) for the use of their My Weather Readme.md as a template.
 - I would like to thank [Code Institute](https://codeinstitute.net) for giving me the opportunity to attempt this course.
 - I would like to thank the [Code Institute](https://codeinstitute.net) Tutor team, especially TOM (who's patience with me is a thing of legend), for all their guidance.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support and general information that helps with my studies.
 - I would like to thank my family, friends and pets for their support and providing me with feedback for the site.
-- I would like to give special thanks to my partner who has been an endless source of support.
+- I would like to give special thanks to my partner, Bel, who has been an endless source of support.
