@@ -19,7 +19,7 @@ h5 {
 }
 
 .button {
-    width: 100%;
+    width: 300px;
     height: 50px;
     padding : 10px;
     justify-content: center;
@@ -40,23 +40,17 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    max-width:99%;
+    max-height:800px;
 }
 
-#landing-zone {
-    max-height: 95%;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    max-width: 100%;
-    justify-content: center;
-}
-
+#landing-zone,
 #game-zone {
-    max-height:600px;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    max-width: 99%;
-    justify-content: center;
-    /*background: url(../images/scroll.jpg) no-repeat center/cover;*/
+    max-height: 80%;
+    margin-top:1px;
+    margin-bottom:1px;
+    padding:10px;
+    background: url(../images/scroll.jpg) no-repeat center/cover;
 }
 
 .hidden {
@@ -72,8 +66,8 @@ main {
 
 #play-area {
     max-width: 99%;
-    max-height:99%;
-    background: url(../images/scroll.jpg) no-repeat center/cover;
+    max-height:80%;
+    /*background: url(../images/scroll.jpg) no-repeat center/cover;*/
     justify-content: center;
     color: black;
 }
@@ -82,71 +76,14 @@ main {
     display: flex;
     max-height: 600px;
     justify-content: center;
-    align-items: center;
     width: 100%;
 }
 
 .game-scroll {
+    display:flex;
     max-height: 500px;
     justify-content: center;
-    max-width: 75%;
-}
-
-#question-area {
-    display: flex;
-    max-height: 700px;
-    max-width: 99%;
-    padding:10px;
-    font-family: "Quicksand", sans-serif;
-    justify-content: center;
-}
-
-.quest-num {
-    padding: 20px;
-    height:50px;
-    margin-top: 50px;
-    font-family: "Chakra Petch", sans-serif;
-}
-
-#newQuestion {
-    height: 100px;
-    padding: 20px;
-    margin: 1px;
-    justify-content: center;
-}
-
-#answer-options {
-    height: fit-content;
-    padding-left: 10px;
-    padding-bottom: 50px;
-    margin-left:30px;
-    margin-bottom:100px;
-    height: 20px;
-    width: 80%;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-#result {
-    justify-content: center;
-    padding: 10px;
-    margin: 10px;
-}
-
-#score-zone {
-    font-family: "Chakra Petch", sans-serif;
-    margin: 10px;
-    padding: 10px;
-    width: 99%;
-    justify-content: center;
-}
-
-#endGame {
-    color: azure;
-    max-height: 800px;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    max-width: 700px;
-    justify-content: center;
+    width: 100%;
+    padding:5px;
 }
 

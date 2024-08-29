@@ -151,11 +151,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Page | Screenshot | Notes |
 | :---: | :---: | :---: |
-| Index | ![screenshot](assets/documentation/images/w3-org-validation-index.jpg) | Section lacks header h2-h6 warning and The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment warning. x(16) |
-| Game On! | ![screenshot](assets/documentation/images/w3-org-validation-game-on.jpg) | The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment warning. |
-| The Games | ![screenshot](assets/documentation/images/w3-org-validation-the-games.jpg) | The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment warning. |
-| Join Us | ![screenshot](assets/documentation/images/w3-org-validation-join-us.jpg) | The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment warning. |
-| Thanks | ![screenshot](assets/documentation/images/w3-org-validation-thanks.jpg) | The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment warning. |
+| Index | ![screenshot](assets/documentation/validation/html-validation.jpg) | The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment (x6) and Empty heading (x2).|
 
 ### CSS
 
@@ -165,11 +161,21 @@ I have used the recommended [CSS Jigsaw Validator](assets/documentation/images/w
 | :---: | :---: |
 | style.css | ![screenshot](assets/documentation/images/w3-org-validation-css.jpg) |
 
+### JavaScript
+
+Below is the recommended [JSHint]() Results.
+
+| Report | Screenshot |
+| :---: | :---: |
+| script.js | ![screenshot](assets/documentation/validation/jshint.jpg) |
+
 ### Lighthouse
 
-Below is the Lighthouse Results.  The first time I ran the test, the rating was much lower and suggested that Google Chrome Extensions were impedeing the site's attributes
+Below is the Lighthouse results.
 
-| Lighthouse | ![screenshot](assets/documentation/lighthouse/lighthouse.jpg) |
+| Report | Screenshot |
+| :---: | :---: |
+| Lighthouse | ![screenshot](assets/documentation/validation/lighthouse-validation.jpg) |
 
 ## User Stories
 

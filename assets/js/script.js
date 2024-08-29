@@ -8,6 +8,7 @@ const scoreText = document.getElementById("score");
 const questNumText = document.getElementById("questNum");
 const gameEnd = document.getElementById('endGame');
 const startAgainButton = document.getElementById('startAgain');
+const finalScore = document.getElementById('finalScore');
 //const gameEnd = document.getElementById('endGame');
 let score;
 let currentQuestion;
@@ -23,9 +24,9 @@ function startGame() {
     buttonA.addEventListener('click', checkAnswer);
     buttonB.addEventListener('click', checkAnswer);
     buttonC.addEventListener('click', checkAnswer);
+    questNumber();
     shuffle();
     newQuestion();
-    console.log('game-zone built');
 }
 
 //-----------------------------  Show Question Number and after the 10th Question, end game after 10 questions  ----------------------//
@@ -62,8 +63,7 @@ function newQuestion() {
 function checkAnswer(event) {
     let answerOptions = questionSheet[currentQuestion]; // select the question number that corresponds to the array for answer
     let correctAnswer = answerOptions.correctAnswer; // get the answer
-    console.log(answerOptions.correctAnswer);
-    buttonText = event.target.innerHTML;
+    let buttonText = event.target.innerHTML;
     
     if (buttonText == correctAnswer) {
         increaseScore();   
@@ -78,7 +78,6 @@ function checkAnswer(event) {
 function increaseScore() {
     score++;
     scoreText.innerHTML = score;
-    console.log(score);
 }
 
 //------------------------------------------------ End the game and continue?  ----------------------------------------------//
@@ -86,8 +85,7 @@ function endGame() {
     gameZone.classList.add('hidden');
     gameEnd.classList.remove('hidden');
     finalScore.innerHTML = score;
-    startAgainButton.addEventListener('click', startAgain)
-    console.log('end game was called');
+    startAgainButton.addEventListener('click', startAgain);
 }
 
 function startAgain() {
